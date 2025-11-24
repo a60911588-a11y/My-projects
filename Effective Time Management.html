@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Effective Time Management.CSS">
+</head>
+
+<body link="white" vlink="white" alink="white">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#ToDo">ToDo List</a></li>
+                <li><a href="#">Main Page</a></li>
+                <!-- <li><a href="#">Productivity Calculator</a></li>
+                <li><a href="#">Pomodoro Timer</a></li> -->
+                <!-- <li><a href="#">Recomendations</a></li> -->
+                <li><a href="#footer">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="firstscreen">
+        <h1>TimeFlow</h1>
+        <p>Smart task time management</p>
+        <img src="https://www.prioritymanagement.com.au/wp-content/uploads/2020/01/Effective-Time-Management-in-this-Dynamic-World.jpg"
+            class="img1">
+    </div>
+    <div class="describe">
+        <h1 style="text-align: center;">TimeFlow</h1>
+        <div class="describe-paras">
+            <label class="para">TimeFlow — это программа для тайм-менеджмента, которая помогает распределять задачи и
+                планировать день без
+                перегрузки. Пользователь указывает список дел, время и важность, а система автоматически предлагает
+                оптимальный план, напоминает о дедлайнах и показывает прогресс.</label>
+            <label class="para">Программа поддерживает популярные техники продуктивности. Метод Pomodoro помогает оставаться
+                сосредоточенным: 25 минут работы и 5 минут отдыха. Матрица Эйзенхауэра распределяет задачи по степени
+                важности и срочности, а Time Blocking позволяет выделять конкретные временные блоки под разные виды
+                деятельности.</label>
+            <label class="para">Благодаря таким инструментам TimeFlow помогает избавиться от хаоса в задачах, уменьшить
+                стресс и повысить
+                эффективность. Пользователь тратит меньше времени на организацию и больше — на результат.</label>
+        </div>
+        <h1 style="text-align: center;">Главные Методы Распределения Времени</h1>
+        <div class="describe-paras">
+            <label class="para">
+Метод Pomodoro (Помидорка)
+Работа разбивается на циклы:
+25 минут — фокус на задаче,
+5 минут — короткий перерыв.
+После 4 циклов — длинный перерыв.
+Помогает избегать прокрастинации 
+и держать концентрацию.
+            </label>
+            <label class="para">
+Метод Eisenhower Matrix (Матрица Эйзенхауэра)
+Все задачи делятся на 4 категории:
+Важно и срочно — делаем сразу
+Важно, не срочно — планируем
+Срочно, не важно — делегируем
+Не срочно, не важно — удаляем
+Помогает правильно расставлять приоритеты.</label>
+            <label class="para">
+Метод Time Blocking (Блокировка времени)
+День делится на временные блоки, 
+и каждому блоку назначается 
+конкретная задача или тип задач.
+Уменьшает отвлечения 
+и хаос в расписании.</label>
+        </div>
+    </div>
+    <div>
+        <p id="date">
+        </p>
+    </div>
+    <div id="ToDo">
+        <div class="todo-container">
+            <h1>ToDo list</h1>
+            <form id="Task-form">
+                <input id="Task-input" type="text" placeholder="Write your task here" required>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="Task-list"></ul>
+        </div>
+        <!-- <div class="calc-container">
+            <h1>Activities Calculator</h1>
+            <form id="Activities-form">
+                <input id="Activities-input" type="text" placeholder="Write your activities for today" required>
+                <input id="Time-input" type="time" required>
+                <button type="submit">Add Activities</button>
+            </form>
+            <ul id="Activities-list"></ul>
+        </div> -->
+    </div>
+
+    <footer id="footer">
+        <ul>
+            <li>Mail: a60911588@gmail.com</li>
+            <li>Number: +7 778 255 4432</li>
+            <li>Adress: Becturova 4/4</li>
+        </ul>
+    </footer>
+
+    <script src="Effective Time Management.js"></script>
+</body>
+
+</html>

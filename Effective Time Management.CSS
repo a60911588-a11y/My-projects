@@ -1,0 +1,204 @@
+nav{
+    position:fixed;
+    width: 100%;
+    text-align: center;
+    background-color: #6e6e6e;
+    color: rgb(0, 0, 0);
+    top:0.4px;
+    left: 0.4px;
+    z-index: 100;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #6e6e6e;
+    flex-direction: row;
+}
+nav ul li{
+    margin: 0px 15px 5px 15px;
+    padding: 0px 10px 5px 10px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    background-color: rgb(94, 93, 93);
+}
+
+.firstscreen{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+    color: rgb(255, 255, 255);
+}
+.firstscreen h1{
+    margin-bottom: 0px;
+    margin-top: 50px;
+    font-size: 100px;
+}
+.firstscreen p{
+    font-size: 50px;
+}
+
+.img1{
+    position: absolute;
+    z-index: -1;
+    top:0.4px;
+    filter: brightness(50%);
+    width: 100%;
+    height: 950px;
+}
+.describe{
+    margin-top: 450px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.describe-paras{
+    display: flex;
+    padding: 10px;
+    justify-content:space-evenly;
+}
+.para{
+    background-color: #ccc;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.45s ease-in-out;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.para:hover{
+    transform: translateY(-25px);
+}
+#date{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 40px;
+    color: aliceblue;
+}
+#ToDo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10em 0;
+}
+.todo-container{
+    padding: 5em 2.5em;
+    background-color: #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+}
+.todo-container button{
+    background-color: rgba(9, 255, 0, 0.671);
+    padding: 15px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+#Task-input{
+    padding: 15px 60px;
+    border: 1px solid #ccc;
+}
+.todo-container ul{
+    list-style: none;
+    padding: 0;
+}
+.todo-container li{
+    background: #3d3d3d;
+    color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-container li button{
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius:3px ;
+    cursor: pointer;
+    padding: 5px;
+}
+.todo-container li input{
+    margin-left: 160px
+}
+
+#activity-calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.calc-container{
+    padding: 20px 10px;
+    background-color: #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+}
+.calc-container button{
+    background-color: rgba(9, 255, 0, 0.671);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+footer{
+    padding: 20px 10px;
+    margin-top: 15px;
+    background-color: #3d3d3d;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+footer ul{
+    text-decoration: none;
+    display: flex;
+
+}
+footer ul li{
+    text-decoration: none;
+    font-size: 25px;
+    margin: 10px 25px;
+    color: #fff;
+    list-style-type: none;
+}
+
+
+@media (max-width: 500px){
+    nav{
+        width: auto; 
+    }
+    .firstscreen h1{
+        font-size: 70px;
+    }
+    .firstscreen p{
+        font-size: 25px;
+    }
+    #date{
+        font-size: 30px;
+    }
+    .describe{
+        margin-top: 550px;
+    }
+    .describe-paras{
+        flex-direction: column;
+    }
+    #Task-input{
+        padding: 15px 35px;
+    }
+}
